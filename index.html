@@ -12,10 +12,23 @@
 </head>
 <body>
     <header> <strong>ROCK, PAPER, SCISSORS GAME!</strong></header>
+    <br><br>
+    <div class="pick">
+    <button id="choice-btn" class="choice-btn" value="Rock">Rock 🪨</button>
+    <button id="choice-btn" class="choice-btn" value="Paper">Paper 🗒</button>
+    <button id="choice-btn" class="choice-btn" value="Scissors">Scissors ✂️</button>
+    </div>
+    <label for="choice" style="font-size: x-large;">You Choose:</label>
+    <input type="text" id="choice" style="background-color:cyan; border: none; font-size: x-large;"><br>
+    <button id="btn">Attack</button>
     <div class="main">
         <div class="Player">
             <h2>PLAYER</h2>
             <p id="player">0</p>
+        </div>
+        <div class="GameTie">
+            <h2>TIE SCORE</h2>
+            <p id="tie">0</p>
         </div>
         <div class="Computer">
              <h2>COMPUTER</h2>
@@ -24,6 +37,11 @@
     </div>
     <div class="MainResult">
         <p id="Result"></p>
+        <p id="Winner"></p>
     </div>
+    <div style="display: flex;justify-content: center; align-items: center;">
+        <button id="button" style="display: none;"> Play Again?</button>
+    </div>
+    
 </body>
 </html>
